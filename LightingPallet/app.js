@@ -8,11 +8,11 @@ const status = document.getElementById("status");
 const language = document.getElementById("language");
 const storageKey = "palealloy.lighting-palette.v1";
 const labels = {
-    optical_effects: "Optical Effects / 光学効果",
-    light_effects: "Light Effects / 光の演出",
-    lighting: "Lighting / 照明",
-    material: "Material / 材質",
-    rendering: "Rendering / レンダリング",
+    optical_effects: { ja: "光学効果", en: "Optical Effects" },
+    light_effects: { ja: "光の演出", en: "Light Effects" },
+    lighting: { ja: "照明", en: "Lighting" },
+    material: { ja: "材質", en: "Material" },
+    rendering: { ja: "レンダリング", en: "Rendering" },
 };
 let items = [], english = [], ids = [], activeCategory = "optical_effects";
 const cards = new Map();
@@ -34,7 +34,7 @@ function refresh() {
         const key = button.dataset.category;
         const entries = items.filter(item => item.category === key);
         const total = entries.filter(item => chosen.has(item.id)).length;
-        const label = `${labels[key] ?? key} (${total}/${entries.length})`;
+        const label = `${labels[key]?.[language.value] ?? key} (${total}/${entries.length})`;
         button.textContent = label;
         button.setAttribute("aria-current", key === activeCategory ? "location" : "false");
         headings.get(key).textContent = label;

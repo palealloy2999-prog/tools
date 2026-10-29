@@ -45,6 +45,8 @@ const headings = el.catalog.children.filter(element => element.tag === "h2");
 assert.equal(cards.length, 55);
 assert.equal(headings.length, 5);
 assert.equal(el.navigation.children.length, 5);
+assert.equal(el.navigation.children[0].textContent, "光学効果 (0/8)");
+assert.equal(headings[0].textContent, "光学効果 (0/8)");
 assert.equal(el.copy.disabled, true);
 const choose = id => el.catalog.click(cards.find(card => card.dataset.id === id));
 choose("effects_light_streaks"); choose("rendering_volumetric_lighting"); choose("rendering_atmospheric_scattering");
@@ -63,6 +65,9 @@ assert.equal(el.catalog.children.length, 60);
 const beforeLanguageChange = el.prompt.value;
 el.language.value = "en"; el.language.listeners.change();
 assert.equal(el.prompt.value, beforeLanguageChange);
+assert.equal(el.navigation.children[0].textContent, "Optical Effects (1/8)");
+assert.equal(el.navigation.children[1].textContent, "Light Effects (2/16)");
+assert.equal(el.catalog.children[0].textContent, "Optical Effects (1/8)");
 for (const card of el.catalog.children.filter(element => element.dataset.id)) {
     assert.equal(card.children.length, 2);
     assert.ok(card.title.includes(catalogs["./lighting.en.json"].find(item => item.id === card.dataset.id).description));
@@ -70,6 +75,7 @@ for (const card of el.catalog.children.filter(element => element.dataset.id)) {
 const restored = await boot(app.saved);
 assert.equal(restored.elements.prompt.value, beforeLanguageChange);
 assert.equal(restored.elements.language.value, "en");
+assert.equal(restored.elements.navigation.children[0].textContent, "Optical Effects (1/8)");
 el.clear.click();
 assert.equal(el.prompt.value, "");
 assert.equal(el.copy.disabled, true);
