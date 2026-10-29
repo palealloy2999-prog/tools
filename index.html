@@ -1,1 +1,57 @@
-:-)
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10141b">
+  <meta name="description" content="palealloyのブラウザーで使える制作ツール。Previs StudioとLighting Prompt Palette。">
+  <title>palealloy tools — Creative tools for your browser</title>
+  <style>
+    :root { color-scheme:dark; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; color:#edf1f6; background:#10141b; }
+    * { box-sizing:border-box; }
+    body { margin:0; padding:64px 24px 32px; min-height:100dvh; background:radial-gradient(ellipse at top left,#20423c55,transparent 60%),#10141b; }
+    main,footer { max-width:1040px; margin:auto; }
+    .eyebrow { color:#83ddc4; font-size:12px; letter-spacing:.24em; margin:0 0 18px; }
+    h1 { font-size:clamp(38px,7vw,70px); letter-spacing:-.05em; margin:0 0 16px; line-height:1.1; font-weight:650; }
+    .intro { color:#aab8ca; line-height:1.8; margin:0 0 40px; font-size:15px; }
+    .tools { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px; }
+    .tool { display:flex; flex-direction:column; overflow:hidden; border:1px solid #3b4858; border-radius:16px; background:#1a222d; color:inherit; text-decoration:none; transition:border-color .2s,transform .2s; }
+    .tool:hover { border-color:#83ddc4; transform:translateY(-3px); }
+    .tool:focus-visible { outline:2px solid #83ddc4; outline-offset:5px; }
+    .cover { height:200px; display:flex; align-items:center; justify-content:center; overflow:hidden; border-bottom:1px solid #3b4858; background:#141922; }
+    .previs { background:radial-gradient(ellipse at 30% 80%,#66799b55,transparent 60%),#171e28; }
+    .frames { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; width:84%; transform:rotate(-5deg); }
+    .frame { aspect-ratio:16/10; border:1px solid #879caf; border-radius:4px; background:linear-gradient(155deg,#78929a55 35%,#2f465f 36%,#141e2a 65%); box-shadow:0 8px 20px #0005; }
+    .frame:nth-child(2n) { background:linear-gradient(25deg,#1c2b38 25%,#aa998455 26%,#344454 65%); }
+    .lighting { gap:8px; padding:20px; background:#151e27; }
+    .lighting img { width:29%; aspect-ratio:1; object-fit:cover; border-radius:8px; border:1px solid #485868; }
+    .tool-content { padding:24px; flex:1; display:flex; flex-direction:column; }
+    .tag { margin:0 0 9px; font-size:11px; letter-spacing:.15em; color:#83ddc4; }
+    h2 { margin:0 0 10px; font-size:24px; font-weight:600; letter-spacing:-.025em; }
+    .description { color:#b5c0ce; font-size:14px; line-height:1.8; margin:0 0 22px; }
+    .open { margin-top:auto; color:#a4f0d8; font-size:14px; }
+    footer { padding-top:38px; font-size:12px; color:#8292a6; }
+    footer a { color:#b1c2d4; text-underline-offset:4px; }
+    @media(max-width:640px) { body { padding:40px 16px 24px; } .tools { grid-template-columns:1fr; } .cover { height:180px; } }
+    @media(prefers-reduced-motion:reduce) { .tool { transition:none; } .tool:hover { transform:none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">PALEALLOY TOOLS</p>
+    <h1>Creative tools.<br>In your browser.</h1>
+    <p class="intro">アイデアを組み立てる、ブラウザーで使える制作ツール。<br>ツールを選んで、すぐに始められます。</p>
+    <div class="tools">
+      <a class="tool" href="./previsstudio/">
+        <div class="cover previs" aria-hidden="true"><div class="frames"><span class="frame"></span><span class="frame"></span><span class="frame"></span><span class="frame"></span><span class="frame"></span><span class="frame"></span></div></div>
+        <div class="tool-content"><p class="tag">PREVISUALIZATION</p><h2>FRAME — Previs Studio</h2><p class="description">制作のイメージを組み立てるプリビズツール。<br>既存のPrevis Studioを開きます。</p><span class="open">Open Previs Studio →</span></div>
+      </a>
+      <a class="tool" href="./LightingPallet/">
+        <div class="cover lighting" aria-hidden="true"><img src="./LightingPallet/thumbnails/effects_lens_flare.webp" alt="" width="256" height="256"><img src="./LightingPallet/thumbnails/effects_prism_light.webp" alt="" width="256" height="256"><img src="./LightingPallet/thumbnails/rendering_rim_lighting.webp" alt="" width="256" height="256"></div>
+        <div class="tool-content"><p class="tag">PROMPT BUILDING · 55 LIGHTING TERMS</p><h2>Lighting Prompt Palette</h2><p class="description">光の演出・照明・材質を画像から選択。<br>英語のプロンプトを作成してコピーできます。</p><span class="open">Open Lighting Palette →</span></div>
+      </a>
+    </div>
+  </main>
+  <footer>Made by palealloy · <a href="https://github.com/palealloy2999-prog/tools">GitHub</a></footer>
+</body>
+</html>
