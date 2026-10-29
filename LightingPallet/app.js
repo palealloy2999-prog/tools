@@ -17,6 +17,15 @@ const labels = {
 let items = [], english = [], ids = [], activeCategory = "optical_effects";
 const cards = new Map();
 const headings = new Map();
+let statusTimer;
+
+function showStatus(message, error = false) {
+    clearTimeout(statusTimer);
+    status.textContent = message;
+    status.classList.toggle("error", error);
+    status.classList.add("visible");
+    statusTimer = setTimeout(() => status.classList.remove("visible"), error ? 6000 : 2200);
+}
 
 function save() {
     try {
@@ -87,7 +96,9 @@ function render() {
 }
 
 function selectionChanged() {
+    clearTimeout(statusTimer);
     status.textContent = "";
+    status.classList.remove("visible");
     status.classList.remove("error");
     refresh();
     save();
@@ -117,13 +128,11 @@ copy.addEventListener("click", async () => {
     if (!preview.value) return;
     try {
         await navigator.clipboard.writeText(preview.value);
-        status.classList.remove("error");
-        status.textContent = "Copied! / コピーしました。";
+        showStatus("Copied! / コピーしました。");
     } catch {
         preview.focus();
         preview.select();
-        status.classList.add("error");
-        status.textContent = "コピーできませんでした。選択中のテキストを手動でコピーしてください。 / Copy failed; please copy the selected text manually.";
+        showStatus("コピーできませんでした。選択中のテキストを手動でコピーしてください。 / Copy failed; please copy the selected text manually.", true);
     }
 });
 
@@ -154,8 +163,7 @@ async function init() {
         requestAnimationFrame(() => grid.scrollTo({ top: headings.get(activeCategory).offsetTop, behavior: "instant" }));
     } catch {
         grid.textContent = "一覧を読み込めませんでした。ページを再読み込みしてください。 / Could not load the catalog. Please reload the page.";
-        status.classList.add("error");
-        status.textContent = "Catalog unavailable / データを読み込めません。";
+        showStatus("Catalog unavailable / データを読み込めません。", true);
     }
 }
 

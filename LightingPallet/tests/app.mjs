@@ -28,15 +28,27 @@ async function boot(saved = null, options = {}) {
     for (const id of ["clear", "copy", "language"]) elements[id].disabled = true;
     let stored = saved;
     const copied = [];
+    let now = 0, timerId = 0;
+    const timers = new Map();
     vm.runInNewContext(source, {
         document: { getElementById: id => elements[id], createElement: tag => new Element(tag) },
         localStorage: { getItem: () => { if (options.storageFails) throw new Error("Blocked"); return stored; }, setItem: (_, value) => { if (options.storageFails) throw new Error("Blocked"); stored = value; } },
         navigator: { clipboard: { writeText: async text => { if (options.copyFails) throw new Error("Denied"); copied.push(text); } } },
         fetch: async path => ({ ok: !options.fetchFails, status: 404, json: async () => catalogs[path] }),
         requestAnimationFrame: callback => callback(), matchMedia: () => ({ matches: false }),
+        setTimeout: (callback, delay) => { const id = ++timerId; timers.set(id, { callback, due: now + delay }); return id; },
+        clearTimeout: id => timers.delete(id),
     });
     await new Promise(resolve => setTimeout(resolve, 0));
-    return { elements, copied, get saved() { return stored; } };
+    return {
+        elements, copied, get saved() { return stored; }, get pendingTimers() { return timers.size; },
+        advance(milliseconds) {
+            now += milliseconds;
+            for (const [id, timer] of timers) {
+                if (timer.due <= now) { timers.delete(id); timer.callback(); }
+            }
+        },
+    };
 }
 const app = await boot();
 const el = app.elements;
@@ -56,7 +68,19 @@ assert.ok(el.navigation.children[1].textContent.endsWith("(2/16)"));
 await el.copy.click();
 assert.deepEqual(app.copied, [el.prompt.value]);
 assert.match(el.status.textContent, /Copied!/);
+assert.equal(el.status.classes.has("visible"), true);
+app.advance(1000);
+await el.copy.click();
+assert.equal(app.pendingTimers, 1);
+app.advance(1200);
+assert.equal(el.status.classes.has("visible"), true);
+app.advance(1000);
+assert.equal(el.status.classes.has("visible"), false);
+assert.equal(app.pendingTimers, 0);
+await el.copy.click();
 choose("effects_light_streaks"); choose("effects_light_streaks");
+assert.equal(el.status.classes.has("visible"), false);
+assert.equal(app.pendingTimers, 0);
 assert.equal(el.prompt.value, "volumetric lighting, atmospheric scattering, light streaks");
 headings[2].offsetTop = 780;
 el.navigation.click(el.navigation.children[2]);
@@ -87,10 +111,14 @@ await denied.elements.copy.click();
 assert.equal(denied.elements.prompt.focused, true);
 assert.equal(denied.elements.prompt.selected, true);
 assert.match(denied.elements.status.textContent, /Copy failed/);
+assert.equal(denied.elements.status.classes.has("visible"), true);
+assert.equal(denied.elements.status.classes.has("error"), true);
+denied.advance(6000);
+assert.equal(denied.elements.status.classes.has("visible"), false);
 const blocked = await boot(null, { storageFails: true });
 blocked.elements.catalog.click(blocked.elements.catalog.children.find(card => card.dataset.id === "effects_bloom"));
 assert.equal(blocked.elements.prompt.value, "bloom");
 const failed = await boot(null, { fetchFails: true });
 assert.match(failed.elements.status.textContent, /Catalog unavailable/);
 assert.equal(failed.elements.copy.disabled, true);
-console.log("App checks passed: 55 cards, categories, order, counts, anchors, language, persistence, aliases, exact clipboard content, copy denial, blocked storage and catalog failure.");
+console.log("App checks passed: picker, copy, timed notifications, repeated-copy timer reset, selection dismissal, copy denial, storage and catalog errors.");

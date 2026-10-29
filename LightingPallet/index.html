@@ -19,8 +19,10 @@
     <div id="catalog" class="lp-grid" tabindex="0" aria-label="Lighting catalog / ライティング一覧"><p>Loading / 読み込み中…</p></div>
     <div class="lp-footer"><span id="count" aria-live="polite">Selected / 選択: 0</span><button id="clear" disabled>Clear All / 全解除</button></div>
     <textarea id="prompt" aria-label="Prompt / プロンプト" readonly spellcheck="false" placeholder="カードを選ぶと、英語のプロンプトがここに表示されます。"></textarea>
-    <button id="copy" class="copy-button" disabled>Copy prompt / プロンプトをコピー</button>
-    <p id="status" class="status" role="status" aria-live="polite"></p>
+    <div class="copy-area">
+      <button id="copy" class="copy-button" disabled>Copy prompt / プロンプトをコピー</button>
+      <p id="status" class="status" role="status" aria-live="polite" aria-atomic="true"></p>
+    </div>
   </main>
 </body>
 </html>
