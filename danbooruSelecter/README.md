@@ -22,19 +22,16 @@ jsonの`index.json`は階層表示用の索引として読み込めます。cust
 
 ## 選別したデータを公開する
 
-初期状態ではデータファイルやjson/customフォルダを同梱していません。公開対象は `catalog-manifest.json` の明示的な一覧からだけ読み込みます。
+公開対象は `catalog-manifest.json` の一覧から読み込みます。この一覧はGitHub ActionsがGitに登録済みのJSONから自動生成します。未登録のローカルファイルは対象になりません。
 
 1. 公開してよいJSONだけをこのアプリ配下の `json/` または `custom/` に配置します。階層表示が必要なら、公開用に選別した `json/index.json` も配置します。
-2. `catalog-manifest.json` を次のように編集します（例示のファイルは同梱していません）。
+2. GitHub上でファイルをアップロードして `main` にコミットすれば、自動で一覧に登録されます。追加・削除・名前変更に対応し、manifestの手動編集は不要です。
+3. ローカルからpushする場合、`json/` と `custom/` は誤公開防止のため `.gitignore` に登録しています。内容を確認したファイルだけ、例として `git add -f danbooruSelecter/custom/quality.json` のようにファイル単位で追加します。フォルダ一括追加は避けてください。
+4. コミット差分で公開対象を確認してからpushします。Actionsの「Update Danbooru catalog manifest」がmanifestをコミットし、GitHub Pagesの再ビルドを要求します。公開サイトへの反映にはビルド完了を待ってください。
 
-```json
-{
-  "files": ["custom/quality.json", "json/index.json", "json/approved_tags.json"]
-}
-```
+対象は両フォルダ直下のJSONです。`json/index.json` は索引として登録し、`custom/index.json` と下位フォルダは対象外です。不正なファイル名・JSON・カテゴリ形式を検出した場合は一覧を書き換えずにActionsが失敗します。Actionsのログで該当ファイルを確認して修正してください。
 
-3. `json/` と `custom/` は誤公開防止のため `.gitignore` に登録しています。内容を確認したファイルだけ、例として `git add -f danbooruSelecter/custom/quality.json` のようにファイル単位で追加します。フォルダ一括追加は避けてください。
-4. コミット差分で公開対象を確認してからpushします。
+手動で再生成する場合はActions画面で「Run workflow」を実行するか、ローカルで `node danbooruSelecter/scripts/update-catalog-manifest.mjs` を実行します。ワークフローは `main` のみを対象にし、変更がない場合はコミットしません。自動更新には `contents: write`、Pages再ビルド要求には `pages: write` を使用します。追加のシークレットは不要です。
 
 **manifestにないファイルでも、GitHubや公開サイトにアップロードした時点で公開されます。** 非公開データはリポジトリやサイトに置かず、ローカル読み込みで使用してください。ファイル名は英数字・アンダースコア・ハイフン・ピリオドを使用できます。下位フォルダや外部URLは指定できません。
 
@@ -58,8 +55,8 @@ jsonの`index.json`は階層表示用の索引として読み込めます。cust
 
 ## 検証
 
-`node danbooruSelecter/tests.mjs` でデータ変換・ナビゲーション・検索・出力整形・パスとリンクの制限を確認できます。
+`node danbooruSelecter/tests.mjs` でデータ変換・ナビゲーション・検索・出力整形・パスとリンクの制限を確認できます。`node --test danbooruSelecter/scripts/update-catalog-manifest.test.mjs` で自動生成の追加・削除・未追跡ファイル除外・入力検証を確認できます。
 
 ## English
 
-A buildless, browser-only tag selector. Serve the repository over HTTP, then open `danbooruSelecter/`. Use local JSON import for private catalogs; files are processed in your browser and never uploaded. Selection and settings are stored in localStorage. No catalog data ships with the app. To publish reviewed catalogs, list their paths in `catalog-manifest.json` and explicitly add only approved files. All uploaded files become public, even when absent from the manifest.
+A buildless, browser-only tag selector. Serve the repository over HTTP, then open `danbooruSelecter/`. Use local JSON import for private catalogs; files are processed in your browser and never uploaded. Selection and settings are stored in localStorage. To publish reviewed catalogs, upload approved JSON files directly under `danbooruSelecter/json/` or `danbooruSelecter/custom/` on `main`. GitHub Actions regenerates and commits the manifest, then requests a Pages rebuild. Only tracked files are included. All uploaded files become public, even when absent from the manifest.

@@ -1,0 +1,57 @@
+name: Update Danbooru catalog manifest
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'danbooruSelecter/json/**'
+      - 'danbooruSelecter/custom/**'
+      - 'danbooruSelecter/catalog-manifest.json'
+      - 'danbooruSelecter/catalog.mjs'
+      - 'danbooruSelecter/scripts/**'
+      - 'danbooruSelecter/tests.mjs'
+      - '.github/workflows/update-danbooru-manifest.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: danbooru-catalog-manifest
+  cancel-in-progress: false
+
+jobs:
+  update:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test catalog and manifest generation
+        run: |
+          node danbooruSelecter/tests.mjs
+          node --test danbooruSelecter/scripts/update-catalog-manifest.test.mjs
+      - name: Generate manifest from tracked public catalogs
+        run: node danbooruSelecter/scripts/update-catalog-manifest.mjs
+      - name: Commit manifest when changed
+        run: |
+          if git diff --quiet -- danbooruSelecter/catalog-manifest.json; then
+            echo 'Manifest is already current.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- danbooruSelecter/catalog-manifest.json
+          git commit -m 'Update Danbooru catalog manifest'
+          git push origin HEAD:main
+      # A GITHUB_TOKEN push does not trigger a Pages build by itself.
+      - name: Rebuild GitHub Pages with the updated manifest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
