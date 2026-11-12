@@ -1,0 +1,142 @@
+{
+  "カテゴリID": "eyebrows",
+  "カテゴリ名": "eyebrows",
+  "カテゴリリンク": "https://danbooru.donmai.us/posts?tags=tag_group%3Aembellishment",
+  "セクション一覧": [
+    {
+      "セクション名": "感情を表現する",
+      "タグ一覧": [
+        {
+          "label": "眉毛が上がっている",
+          "tag": "raised_eyebrows",
+          "link": "https://danbooru.donmai.us/wiki_pages/raised_eyebrows"
+        },
+        {
+          "label": "片方の眉毛は上がって",
+          "tag": "raised_eyebrow",
+          "link": "https://danbooru.donmai.us/wiki_pages/raised_eyebrow"
+        },
+        {
+          "label": "片方の眉毛",
+          "tag": "cocked_eyebrow",
+          "link": "https://danbooru.donmai.us/wiki_pages/cocked_eyebrow"
+        },
+        {
+          "label": "眉毛の内側が上がった状態。眉の内側の端だけが上がった状態。",
+          "tag": "raised_inner_eyebrows",
+          "link": "https://danbooru.donmai.us/wiki_pages/raised_inner_eyebrows"
+        },
+        {
+          "label": "自己満足",
+          "tag": "smug",
+          "link": "https://danbooru.donmai.us/wiki_pages/smug"
+        },
+        {
+          "label": "恐怖",
+          "tag": "fear",
+          "link": "https://danbooru.donmai.us/wiki_pages/fear"
+        },
+        {
+          "label": "眉間のしわ",
+          "tag": "furrowed_brow",
+          "link": "https://danbooru.donmai.us/wiki_pages/furrowed_brow"
+        },
+        {
+          "label": "V字型の眉毛は",
+          "tag": "v-shaped_eyebrows",
+          "link": "https://danbooru.donmai.us/wiki_pages/v-shaped_eyebrows"
+        }
+      ]
+    },
+    {
+      "セクション名": "サイズと形状",
+      "タグ一覧": [
+        {
+          "label": "短い眉毛",
+          "tag": "short_eyebrows",
+          "link": "https://danbooru.donmai.us/wiki_pages/short_eyebrows"
+        },
+        {
+          "label": "太い眉毛",
+          "tag": "thick_eyebrows",
+          "link": "https://danbooru.donmai.us/wiki_pages/thick_eyebrows"
+        },
+        {
+          "label": "太い眉毛",
+          "tag": "huge_eyebrows",
+          "link": "https://danbooru.donmai.us/wiki_pages/huge_eyebrows"
+        },
+        {
+          "label": "長い眉毛",
+          "tag": "long_eyebrows",
+          "link": "https://danbooru.donmai.us/wiki_pages/long_eyebrows"
+        },
+        {
+          "label": "一本眉",
+          "tag": "unibrow",
+          "link": "https://danbooru.donmai.us/wiki_pages/unibrow"
+        },
+        {
+          "label": "二股眉毛",
+          "tag": "forked_eyebrows",
+          "link": "https://danbooru.donmai.us/wiki_pages/forked_eyebrows"
+        },
+        {
+          "label": "カールした眉毛",
+          "tag": "curly_eyebrows",
+          "link": "https://danbooru.donmai.us/wiki_pages/curly_eyebrows"
+        },
+        {
+          "label": "引き眉とは",
+          "tag": "hikimayu",
+          "link": "https://danbooru.donmai.us/wiki_pages/hikimayu"
+        },
+        {
+          "label": "眉ピアス",
+          "tag": "eyebrow_piercing",
+          "link": "https://danbooru.donmai.us/wiki_pages/eyebrow_piercing"
+        },
+        {
+          "label": "眉カットは",
+          "tag": "eyebrow_cut",
+          "link": "https://danbooru.donmai.us/wiki_pages/eyebrow_cut"
+        },
+        {
+          "label": "眉間の傷跡",
+          "tag": "scar_across_eyebrow",
+          "link": "https://danbooru.donmai.us/wiki_pages/scar_across_eyebrow"
+        }
+      ]
+    },
+    {
+      "セクション名": "髪の毛に関して",
+      "タグ一覧": [
+        {
+          "label": "髪の毛で隠れた眉毛",
+          "tag": "eyebrows_hidden_by_hair",
+          "link": "https://danbooru.donmai.us/wiki_pages/eyebrows_hidden_by_hair"
+        },
+        {
+          "label": "不一致な眉毛",
+          "tag": "mismatched_eyebrows",
+          "link": "https://danbooru.donmai.us/wiki_pages/mismatched_eyebrows"
+        }
+      ]
+    },
+    {
+      "セクション名": "他の",
+      "タグ一覧": [
+        {
+          "label": "眉毛がない",
+          "tag": "no_eyebrows",
+          "link": "https://danbooru.donmai.us/wiki_pages/no_eyebrows"
+        },
+        {
+          "label": "非推奨で",
+          "tag": "help:deprecation_notice",
+          "link": "https://danbooru.donmai.us/wiki_pages/help:deprecation_notice"
+        }
+      ]
+    }
+  ]
+}

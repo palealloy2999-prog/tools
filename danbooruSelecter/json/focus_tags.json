@@ -1,0 +1,177 @@
+{
+  "カテゴリID": "focus_tags",
+  "カテゴリ名": "フォーカスタグ",
+  "カテゴリリンク": "https://danbooru.donmai.us/posts?tags=tag_group%3Afocus_tags",
+  "セクション一覧": [
+    {
+      "セクション名": "その他",
+      "タグ一覧": [
+        {
+          "label": "solo focus",
+          "tag": "solo_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/solo_focus"
+        },
+        {
+          "label": "soloタグ",
+          "tag": "solo",
+          "link": "https://danbooru.donmai.us/wiki_pages/solo"
+        },
+        {
+          "label": "男性フォーカスタグ",
+          "tag": "male_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/male_focus"
+        }
+      ]
+    },
+    {
+      "セクション名": "体の部位",
+      "タグ一覧": [
+        {
+          "label": "脇の下に焦点を当てる",
+          "tag": "armpit_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/armpit_focus"
+        },
+        {
+          "label": "お尻フォーカス",
+          "tag": "ass_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/ass_focus"
+        },
+        {
+          "label": "バックフォーカス",
+          "tag": "back_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/back_focus"
+        },
+        {
+          "label": "乳房フォーカス",
+          "tag": "breast_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/breast_focus"
+        },
+        {
+          "label": "目の焦点",
+          "tag": "eye_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/eye_focus"
+        },
+        {
+          "label": "足のフォーカス",
+          "tag": "foot_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/foot_focus"
+        },
+        {
+          "label": "手フォーカス",
+          "tag": "hand_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/hand_focus"
+        },
+        {
+          "label": "ヒップフォーカス",
+          "tag": "hip_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/hip_focus"
+        },
+        {
+          "label": "へそに焦点を当てる",
+          "tag": "navel_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/navel_focus"
+        },
+        {
+          "label": "胸筋の焦点",
+          "tag": "pectoral_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/pectoral_focus"
+        },
+        {
+          "label": "太ももに焦点を当てる",
+          "tag": "thigh_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/thigh_focus"
+        }
+      ]
+    },
+    {
+      "セクション名": "性別",
+      "タグ一覧": [
+        {
+          "label": "男性中心",
+          "tag": "male_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/male_focus"
+        },
+        {
+          "label": "その他の焦点",
+          "tag": "other_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/other_focus"
+        }
+      ]
+    },
+    {
+      "セクション名": "オブジェクト",
+      "タグ一覧": [
+        {
+          "label": "動物に焦点を当てる",
+          "tag": "animal_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/animal_focus"
+        },
+        {
+          "label": "本の焦点",
+          "tag": "book_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/book_focus"
+        },
+        {
+          "label": "クラウドフォーカス",
+          "tag": "cloud_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/cloud_focus"
+        },
+        {
+          "label": "食に焦点を当てる",
+          "tag": "food_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/food_focus"
+        },
+        {
+          "label": "テキストフォーカス",
+          "tag": "text_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/text_focus"
+        },
+        {
+          "label": "車両フォーカス",
+          "tag": "vehicle_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/vehicle_focus"
+        },
+        {
+          "label": "武器の焦点",
+          "tag": "weapon_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/weapon_focus"
+        },
+        {
+          "label": "風鈴フォーカス",
+          "tag": "wind_chime_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/wind_chime_focus"
+        }
+      ]
+    },
+    {
+      "セクション名": "他の",
+      "タグ一覧": [
+        {
+          "label": "ソロフォーカス",
+          "tag": "solo_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/solo_focus"
+        },
+        {
+          "label": "テキストフォーカス",
+          "tag": "text_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/text_focus"
+        }
+      ]
+    },
+    {
+      "セクション名": "参照",
+      "タグ一覧": [
+        {
+          "label": "ソフトフォーカス",
+          "tag": "soft_focus",
+          "link": "https://danbooru.donmai.us/wiki_pages/soft_focus"
+        },
+        {
+          "label": "タググループ:色",
+          "tag": "tag_group%3Acolors",
+          "link": "https://danbooru.donmai.us/wiki_pages/tag_group%3Acolors"
+        }
+      ]
+    }
+  ]
+}

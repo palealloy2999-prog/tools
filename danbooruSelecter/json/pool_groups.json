@@ -1,0 +1,152 @@
+{
+  "カテゴリID": "pool_groups",
+  "カテゴリ名": "プールグループ",
+  "カテゴリリンク": "https://danbooru.donmai.us/posts?tags=pool_groups",
+  "セクション一覧": [
+    {
+      "セクション名": "その他",
+      "タグ一覧": [
+        {
+          "label": "プール",
+          "tag": "help%3Apools",
+          "link": "https://danbooru.donmai.us/wiki_pages/help%3Apools"
+        },
+        {
+          "label": "プールグループ:strange",
+          "tag": "pool_group%3Astrange",
+          "link": "https://danbooru.donmai.us/wiki_pages/pool_group%3Astrange"
+        },
+        {
+          "label": "プールグループ:sex",
+          "tag": "pool_group%3Asex",
+          "link": "https://danbooru.donmai.us/wiki_pages/pool_group%3Asex"
+        },
+        {
+          "label": "プールグループを",
+          "tag": "pool_groups",
+          "link": "https://danbooru.donmai.us/wiki_pages/pool_groups"
+        }
+      ]
+    },
+    {
+      "セクション名": "アーティストのための教育",
+      "タグ一覧": [
+        {
+          "label": "プールグループ:教育",
+          "tag": "pool_group%3Aeducational",
+          "link": "https://danbooru.donmai.us/wiki_pages/pool_group%3Aeducational"
+        }
+      ]
+    },
+    {
+      "セクション名": "スタイルと著者",
+      "タグ一覧": [
+        {
+          "label": "プールグループ:スタイル",
+          "tag": "pool_group%3Astyle",
+          "link": "https://danbooru.donmai.us/wiki_pages/pool_group%3Astyle"
+        }
+      ]
+    },
+    {
+      "セクション名": "メタ;画像の特徴と問題点",
+      "タグ一覧": [
+        {
+          "label": "プールグループ:メタ",
+          "tag": "pool_group%3Ameta",
+          "link": "https://danbooru.donmai.us/wiki_pages/pool_group%3Ameta"
+        }
+      ]
+    },
+    {
+      "セクション名": "テキスト：投稿に書かれている内容",
+      "タグ一覧": [
+        {
+          "label": "プールグループ:テキスト",
+          "tag": "pool_group%3Atext",
+          "link": "https://danbooru.donmai.us/wiki_pages/pool_group%3Atext"
+        }
+      ]
+    },
+    {
+      "セクション名": "セックス、変態、ロマンチック、愛情深い",
+      "タグ一覧": [
+        {
+          "label": "プールグループ:セックス",
+          "tag": "pool_group%3Asex",
+          "link": "https://danbooru.donmai.us/wiki_pages/pool_group%3Asex"
+        }
+      ]
+    },
+    {
+      "セクション名": "人間の体、裸であろうとなかろうと、特にセクシーな女の子とその服",
+      "タグ一覧": [
+        {
+          "label": "プールグループ:ボディ",
+          "tag": "pool_group%3Abody",
+          "link": "https://danbooru.donmai.us/wiki_pages/pool_group%3Abody"
+        }
+      ]
+    },
+    {
+      "セクション名": "奇妙；普通でない；変；怖い",
+      "タグ一覧": [
+        {
+          "label": "プールグループ:奇妙な",
+          "tag": "pool_group%3Astrange",
+          "link": "https://danbooru.donmai.us/wiki_pages/pool_group%3Astrange"
+        }
+      ]
+    },
+    {
+      "セクション名": "登場人物の表情、反応、態度…",
+      "タグ一覧": [
+        {
+          "label": "プールグループ:式",
+          "tag": "pool_group%3Aexpression",
+          "link": "https://danbooru.donmai.us/wiki_pages/pool_group%3Aexpression"
+        }
+      ]
+    },
+    {
+      "セクション名": "特定の著作権に特化したプール",
+      "タグ一覧": [
+        {
+          "label": "プールグループ:ポケモン",
+          "tag": "pool_group%3Apokemon",
+          "link": "https://danbooru.donmai.us/wiki_pages/pool_group%3Apokemon"
+        },
+        {
+          "label": "プールグループ:東方",
+          "tag": "pool_group%3Atouhou",
+          "link": "https://danbooru.donmai.us/wiki_pages/pool_group%3Atouhou"
+        }
+      ]
+    },
+    {
+      "セクション名": "雑誌用のプール",
+      "タグ一覧": [
+        {
+          "label": "電撃萌王および関連",
+          "tag": "list_of_dengeki_moeoh_issues",
+          "link": "https://danbooru.donmai.us/wiki_pages/list_of_dengeki_moeoh_issues"
+        },
+        {
+          "label": "Memgami MAGAZINEおよび関連",
+          "tag": "list_of_megami_issues",
+          "link": "https://danbooru.donmai.us/wiki_pages/list_of_megami_issues"
+        }
+      ]
+    },
+    {
+      "セクション名": "参照",
+      "タグ一覧": [
+        {
+          "label": "メタウィキのリスト",
+          "tag": "list_of_meta-wikis",
+          "link": "https://danbooru.donmai.us/wiki_pages/list_of_meta-wikis"
+        }
+      ]
+    }
+  ]
+}

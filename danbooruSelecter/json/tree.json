@@ -1,0 +1,332 @@
+{
+  "カテゴリID": "tree",
+  "カテゴリ名": "木",
+  "カテゴリリンク": "https://danbooru.donmai.us/posts?tags=tree",
+  "セクション一覧": [
+    {
+      "セクション名": "その他",
+      "タグ一覧": [
+        {
+          "label": "植物",
+          "tag": "plant",
+          "link": "https://danbooru.donmai.us/wiki_pages/plant"
+        },
+        {
+          "label": "低木と区別される。樹木は通常、地面から少し離れたところに分岐のない1本の主幹または幹を持ち、",
+          "tag": "bush",
+          "link": "https://danbooru.donmai.us/wiki_pages/bush"
+        },
+        {
+          "label": "枝",
+          "tag": "branch",
+          "link": "https://danbooru.donmai.us/wiki_pages/branch"
+        },
+        {
+          "label": "葉",
+          "tag": "leaf",
+          "link": "https://danbooru.donmai.us/wiki_pages/leaf"
+        },
+        {
+          "label": "苗木を",
+          "tag": "sapling",
+          "link": "https://danbooru.donmai.us/wiki_pages/sapling"
+        }
+      ]
+    },
+    {
+      "セクション名": "部品",
+      "タグ一覧": [
+        {
+          "label": "支店",
+          "tag": "branch",
+          "link": "https://danbooru.donmai.us/wiki_pages/branch"
+        },
+        {
+          "label": "花",
+          "tag": "flower",
+          "link": "https://danbooru.donmai.us/wiki_pages/flower"
+        },
+        {
+          "label": "葉",
+          "tag": "leaf",
+          "link": "https://danbooru.donmai.us/wiki_pages/leaf"
+        },
+        {
+          "label": "ログ",
+          "tag": "log",
+          "link": "https://danbooru.donmai.us/wiki_pages/log"
+        },
+        {
+          "label": "花びら",
+          "tag": "petals",
+          "link": "https://danbooru.donmai.us/wiki_pages/petals"
+        },
+        {
+          "label": "植物の根",
+          "tag": "plant_roots",
+          "link": "https://danbooru.donmai.us/wiki_pages/plant_roots"
+        },
+        {
+          "label": "スティック",
+          "tag": "stick",
+          "link": "https://danbooru.donmai.us/wiki_pages/stick"
+        },
+        {
+          "label": "木の洞",
+          "tag": "tree_hollow",
+          "link": "https://danbooru.donmai.us/wiki_pages/tree_hollow"
+        },
+        {
+          "label": "木の切り株",
+          "tag": "tree_stump",
+          "link": "https://danbooru.donmai.us/wiki_pages/tree_stump"
+        }
+      ]
+    },
+    {
+      "セクション名": "生息地",
+      "タグ一覧": [
+        {
+          "label": "森",
+          "tag": "forest",
+          "link": "https://danbooru.donmai.us/wiki_pages/forest"
+        },
+        {
+          "label": "熱帯雨林",
+          "tag": "rainforest",
+          "link": "https://danbooru.donmai.us/wiki_pages/rainforest"
+        },
+        {
+          "label": "ジャングル",
+          "tag": "jungle",
+          "link": "https://danbooru.donmai.us/wiki_pages/jungle"
+        },
+        {
+          "label": "湿地",
+          "tag": "wetland",
+          "link": "https://danbooru.donmai.us/wiki_pages/wetland"
+        }
+      ]
+    },
+    {
+      "セクション名": "木の種類",
+      "タグ一覧": [
+        {
+          "label": "バオバブ",
+          "tag": "baobab",
+          "link": "https://danbooru.donmai.us/wiki_pages/baobab"
+        },
+        {
+          "label": "白樺の木",
+          "tag": "birch_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/birch_tree"
+        },
+        {
+          "label": "盆栽",
+          "tag": "bonsai",
+          "link": "https://danbooru.donmai.us/wiki_pages/bonsai"
+        },
+        {
+          "label": "桜",
+          "tag": "cherry_blossoms",
+          "link": "https://danbooru.donmai.us/wiki_pages/cherry_blossoms"
+        },
+        {
+          "label": "クリスマスツリー",
+          "tag": "christmas_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/christmas_tree"
+        },
+        {
+          "label": "モミの木",
+          "tag": "fir_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/fir_tree"
+        },
+        {
+          "label": "果樹",
+          "tag": "fruit_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/fruit_tree"
+        },
+        {
+          "label": "イチョウの木",
+          "tag": "ginkgo_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/ginkgo_tree"
+        },
+        {
+          "label": "イチョウの実",
+          "tag": "ginkgo_nut",
+          "link": "https://danbooru.donmai.us/wiki_pages/ginkgo_nut"
+        },
+        {
+          "label": "カエデの葉",
+          "tag": "maple_leaf",
+          "link": "https://danbooru.donmai.us/wiki_pages/maple_leaf"
+        },
+        {
+          "label": "ヤシの木",
+          "tag": "palm_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/palm_tree"
+        },
+        {
+          "label": "ココナッツの木",
+          "tag": "coconut_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/coconut_tree"
+        },
+        {
+          "label": "松",
+          "tag": "pine_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/pine_tree"
+        },
+        {
+          "label": "梅の花",
+          "tag": "plum_blossoms",
+          "link": "https://danbooru.donmai.us/wiki_pages/plum_blossoms"
+        },
+        {
+          "label": "柳",
+          "tag": "willow",
+          "link": "https://danbooru.donmai.us/wiki_pages/willow"
+        }
+      ]
+    },
+    {
+      "セクション名": "木その他",
+      "タグ一覧": [
+        {
+          "label": "秋",
+          "tag": "autumn",
+          "link": "https://danbooru.donmai.us/wiki_pages/autumn"
+        },
+        {
+          "label": "裸木",
+          "tag": "bare_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/bare_tree"
+        },
+        {
+          "label": "倒木",
+          "tag": "fallen_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/fallen_tree"
+        },
+        {
+          "label": "巨大な木",
+          "tag": "giant_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/giant_tree"
+        },
+        {
+          "label": "ツリーハウス",
+          "tag": "treehouse",
+          "link": "https://danbooru.donmai.us/wiki_pages/treehouse"
+        },
+        {
+          "label": "木陰",
+          "tag": "tree_shade",
+          "link": "https://danbooru.donmai.us/wiki_pages/tree_shade"
+        }
+      ]
+    },
+    {
+      "セクション名": "アクション",
+      "タグ一覧": [
+        {
+          "label": "木に対して",
+          "tag": "against_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/against_tree"
+        },
+        {
+          "label": "木の中で",
+          "tag": "in_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/in_tree"
+        },
+        {
+          "label": "木に座る",
+          "tag": "sitting_in_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/sitting_in_tree"
+        },
+        {
+          "label": "屋外",
+          "tag": "outdoors",
+          "link": "https://danbooru.donmai.us/wiki_pages/outdoors"
+        },
+        {
+          "label": "木の下",
+          "tag": "under_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/under_tree"
+        },
+        {
+          "label": "trees",
+          "tag": "trees",
+          "link": "https://danbooru.donmai.us/wiki_pages/trees"
+        },
+        {
+          "label": "詳細はこちら",
+          "tag": "help:tag_aliases",
+          "link": "https://danbooru.donmai.us/wiki_pages/help:tag_aliases"
+        },
+        {
+          "label": "against_tree",
+          "tag": "against_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/against_tree"
+        },
+        {
+          "label": "apple_tree",
+          "tag": "apple_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/apple_tree"
+        },
+        {
+          "label": "bare_tree",
+          "tag": "bare_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/bare_tree"
+        },
+        {
+          "label": "birch_tree",
+          "tag": "birch_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/birch_tree"
+        },
+        {
+          "label": "fir_tree",
+          "tag": "fir_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/fir_tree"
+        },
+        {
+          "label": "fruit_tree",
+          "tag": "fruit_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/fruit_tree"
+        },
+        {
+          "label": "gigant_tree",
+          "tag": "giant_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/giant_tree"
+        },
+        {
+          "label": "in_tree",
+          "tag": "in_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/in_tree"
+        },
+        {
+          "label": "maple_tree",
+          "tag": "maple_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/maple_tree"
+        },
+        {
+          "label": "palm_tree",
+          "tag": "palm_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/palm_tree"
+        },
+        {
+          "label": "pine_tree",
+          "tag": "pine_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/pine_tree"
+        },
+        {
+          "label": "under_tree",
+          "tag": "under_tree",
+          "link": "https://danbooru.donmai.us/wiki_pages/under_tree"
+        },
+        {
+          "label": "詳細はこちら",
+          "tag": "help:tag_implications",
+          "link": "https://danbooru.donmai.us/wiki_pages/help:tag_implications"
+        }
+      ]
+    }
+  ]
+}

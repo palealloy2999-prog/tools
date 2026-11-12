@@ -1,0 +1,52 @@
+{
+  "カテゴリID": "areolae",
+  "カテゴリ名": "乳輪",
+  "カテゴリリンク": "https://danbooru.donmai.us/posts?tags=areolae",
+  "セクション一覧": [
+    {
+      "セクション名": "参照",
+      "タグ一覧": [
+        {
+          "label": "乳輪ピアス",
+          "tag": "areola_piercing",
+          "link": "https://danbooru.donmai.us/wiki_pages/areola_piercing"
+        },
+        {
+          "label": "乳輪スリップ",
+          "tag": "areola_slip",
+          "link": "https://danbooru.donmai.us/wiki_pages/areola_slip"
+        },
+        {
+          "label": "明るい乳輪",
+          "tag": "light_areolae",
+          "link": "https://danbooru.donmai.us/wiki_pages/light_areolae"
+        },
+        {
+          "label": "暗い乳輪",
+          "tag": "dark_areolae",
+          "link": "https://danbooru.donmai.us/wiki_pages/dark_areolae"
+        },
+        {
+          "label": "大きな乳輪",
+          "tag": "large_areolae",
+          "link": "https://danbooru.donmai.us/wiki_pages/large_areolae"
+        },
+        {
+          "label": "乳首が見える",
+          "tag": "nipple_slip",
+          "link": "https://danbooru.donmai.us/wiki_pages/nipple_slip"
+        }
+      ]
+    },
+    {
+      "セクション名": "外部リンク",
+      "タグ一覧": [
+        {
+          "label": "非推奨で",
+          "tag": "help:deprecation_notice",
+          "link": "https://danbooru.donmai.us/wiki_pages/help:deprecation_notice"
+        }
+      ]
+    }
+  ]
+}
