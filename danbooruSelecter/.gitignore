@@ -1,0 +1,3 @@
+# Local catalogs are private by default. Publish only explicitly reviewed files.
+/json/
+/custom/
